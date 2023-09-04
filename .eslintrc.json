@@ -1,0 +1,50 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": ["plugin:react/recommended", "standard-with-typescript", "prettier"],
+    "overrides": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./",
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["app/modules/graphql/generated.ts"],
+    "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+    "rules": {
+        "@typescript-eslint/no-unused-vars": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "error",
+        "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+        "no-console": "error",
+
+
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/no-extraneous-class": "off",
+        "@typescript-eslint/method-signature-style": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-misused-promises": "off",
+        "@typescript-eslint/prefer-nullish-coalescing": "off",
+        "@typescript-eslint/consistent-type-assertions": "off",
+        "@typescript-eslint/no-base-to-string": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-confusing-void-expression": "off",
+        "@typescript-eslint/await-thenable": "off",
+        "@typescript-eslint/return-await": "off",
+        "@typescript-eslint/array-type": "off",
+        "@typescript-eslint/prefer-function-type": "off",
+        "spaced-comment": "off",
+        "@typescript-eslint/consistent-type-imports": "off",
+        "@typescript-eslint/promise-function-async": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}
